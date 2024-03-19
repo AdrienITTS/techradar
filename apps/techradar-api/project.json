@@ -18,6 +18,10 @@
           "buildTarget": "techradar-api:build:production"
         }
       }
+    },
+    "docker-build": {
+      "dependsOn": ["build"],
+      "command": "docker build -f apps/techradar-api/Dockerfile . -t techradar-api"
     }
   },
   "tags": []

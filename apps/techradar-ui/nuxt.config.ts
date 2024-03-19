@@ -19,9 +19,7 @@ export default defineNuxtConfig({
   imports: {
     autoImport: true,
   },
-
   css: ['~/assets/css/styles.scss'],
-
   vite: {
     plugins: [nxViteTsPaths()],
   },
