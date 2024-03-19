@@ -1,0 +1,8 @@
+{
+  "name": "techradar-ui-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/techradar-ui-e2e/src",
+  "implicitDependencies": ["techradar-ui"],
+  "// targets": "to see all targets run: nx show project techradar-ui-e2e --web",
+  "targets": {}
+}

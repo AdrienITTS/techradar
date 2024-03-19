@@ -1,0 +1,24 @@
+{
+  "name": "techradar-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/techradar-api/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "techradar-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "techradar-api:build:development"
+        },
+        "production": {
+          "buildTarget": "techradar-api:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
